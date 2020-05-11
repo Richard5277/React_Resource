@@ -1,0 +1,32 @@
+.rr_nav {
+  background-color: var(--rr-color-dark);
+  color: white;
+
+  &-button:focus {
+    outline: 0;
+  }
+  
+  &-item {
+    border-bottom: 1px solid var(--rr-color-primary);
+  }
+
+  &-link {
+    padding: 0 12px;
+    color: var(--rr-color-secondary);
+  &:hover {
+    text-decoration: none;
+    color: var(--rr-color-tertiary);
+    }
+  }
+
+  &-icon {
+    background-color: var(--rr-color-success);
+    border-radius: 16px;
+    margin: 6px;
+    width: 48px;
+  }
+}
+
+.is-active {
+  color: var(--rr-color-success);
+}

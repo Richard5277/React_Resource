@@ -1,0 +1,21 @@
+.app {
+
+  &-title {
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  &-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &-item {
+      border-bottom: 1px solid var(--rr-color-primary);
+      padding: 24px 0 6px;
+      margin: 0 6vw;
+    }
+  }
+  
+}
+
