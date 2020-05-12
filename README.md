@@ -1,23 +1,23 @@
-### REACT RESOURCE BOOK
+# REACT RESOURCE BOOK
 
 React Resource Book is a combination of some of the most popular react frameworks and functions.
 It is a good place to look around and find the useful tools that you need.
 
 ## Content List
 
-# XState
+### XState
 A react state management tool based on the logic of Redux but also extended to Hooks.\
 
-# Custom Hook
+### Custom Hook
 Building your own Hooks lets you extract component logic into reusable functions.
 
-# ES6 Spread Operator
+### ES6 Spread Operator
 ES6 sugar syntax, commonly used for props value passing
 
-# CSS Modules
+### CSS Modules
 A quick way to access application theme variables
 
-## Available Scripts
+#### Available Scripts
 
 In the project directory, you can run:
 
