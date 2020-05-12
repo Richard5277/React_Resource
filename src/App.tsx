@@ -33,7 +33,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <div className="app">
-              <h1 className="app-title">REACT RESOURCE</h1>
+              <h1 className="app-title">REACT RESOURCE BOOK</h1>
               <ul className="app-list">
                 
                 <Link to='xstate' className="app-list-link">

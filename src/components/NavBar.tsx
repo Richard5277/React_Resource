@@ -17,7 +17,7 @@ const [ isOpen, setIsOpen ] = useState(false)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light rr_nav">
-      <NavLink className="navbar-brand" style={{color: '#3e92cc'}} to='/'>R.R</NavLink>
+      <NavLink className="navbar-brand" style={{color: '#3e92cc'}} to='/'>R.R.B</NavLink>
       <button 
         onClick={() => setIsOpen(!isOpen)} 
         className="navbar-toggler rr_nav-button"
