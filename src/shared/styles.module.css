@@ -1,0 +1,12 @@
+@import "./colors.scss";
+
+.pending {
+  color: var(--rr-color-primary);
+}
+
+.online {
+  color: var(--rr-color-success);
+}
+.offline {
+  color: var(--rr-color-alert);
+}

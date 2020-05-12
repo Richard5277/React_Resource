@@ -20,7 +20,7 @@
   }
 
   &-icon {
-    background-color: var(--rr-color-success);
+    background-color: var(--rr-color-active);
     border-radius: 16px;
     margin: 6px;
     width: 48px;
@@ -28,5 +28,11 @@
 }
 
 .is-active {
-  color: var(--rr-color-success);
+  color: var(--rr-color-active);
+}
+
+@media (min-width: 992px) {
+  .rr_nav-item {
+    border-bottom: none;
+  }
 }

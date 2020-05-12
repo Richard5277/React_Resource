@@ -10,6 +10,15 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    &-link {
+      color: var(--rr-color-dark);
+      text-decoration: none;
+      &:hover {
+        color: var(--rr-color-primary);
+        text-decoration: none;
+      }
+    }
     &-item {
       border-bottom: 1px solid var(--rr-color-primary);
       padding: 24px 0 6px;

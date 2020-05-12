@@ -31,9 +31,10 @@ const [ isOpen, setIsOpen ] = useState(false)
       </button>
       <div className={isOpen ? 'navbar-collapse' : 'collapse navbar-collapse'} id="navbarNav">
         <ul className="navbar-nav">
-          <NavItem location='/' title='Home' exact={true} onClickItem={() => setIsOpen(false)}/>
+          <NavItem location='/' title='Home' exact={true} onClickItem={() => setIsOpen(false)} isHamburger={isOpen} />
           <NavItem location='/xstate' title='XState' onClickItem={() => setIsOpen(false)} />
           <NavItem location='/spread' title='Spread' onClickItem={() => setIsOpen(false)} />
+          <NavItem location='/custom-hook' title='Custom Hook' onClickItem={() => setIsOpen(false)} />
         </ul>
       </div>
     </nav>

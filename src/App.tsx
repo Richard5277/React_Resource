@@ -2,15 +2,17 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
+
+import './shared/colors.scss';
+import './App.scss';
 
 import NavBar from './components/NavBar'
 import XStatePage from './pages/XState'
 import SpreadOperator from './pages/spreadOperator/SpreadOperator'
-
-import './shared/colors.scss';
-import './App.scss';
+import CustomHookPage from './pages/customHook';
 
 const AppListItem = (props: any) => {
   const { title, desc } = props
@@ -21,7 +23,6 @@ const AppListItem = (props: any) => {
     </li>
   )
 }
-
 
 function App() {
   return (
@@ -34,8 +35,19 @@ function App() {
             <div className="app">
               <h1 className="app-title">REACT RESOURCE</h1>
               <ul className="app-list">
-                <AppListItem title='XState' desc='React state management tool' />
-                <AppListItem title='Spread Oporator' desc='ES6 spread {...}' />
+                
+                <Link to='xstate' className="app-list-link">
+                  <AppListItem title='XState' desc='React state management tool' />
+                </Link>
+                
+                <Link to='xstate' className="app-list-link">
+                  <AppListItem title='Spread Oporator' desc='ES6 spread {...}' />
+                </Link>
+
+                <Link to='/custom-hook' className="app-list-link">
+                <AppListItem title='Custom Hook' desc='V16 custom hook func' />
+                </Link>
+
               </ul>
             </div>
           </Route>
@@ -47,6 +59,9 @@ function App() {
           </Route>
           <Route path='/spread'>
             <SpreadOperator />
+          </Route>
+          <Route path='/custom-hook'>
+            <CustomHookPage />
           </Route>
         </Switch>
 
