@@ -10,3 +10,7 @@
 .offline {
   color: var(--rr-color-alert);
 }
+
+.header {
+  color: var(--rr-color-header)
+}

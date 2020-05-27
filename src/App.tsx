@@ -13,6 +13,7 @@ import NavBar from './components/NavBar'
 import XStatePage from './pages/XState'
 import SpreadOperator from './pages/spreadOperator/SpreadOperator'
 import CustomHookPage from './pages/customHook';
+import TodoPage from './pages/redux'
 
 const AppListItem = (props: any) => {
   const { title, desc } = props
@@ -25,6 +26,7 @@ const AppListItem = (props: any) => {
 }
 
 function App() {
+  
   return (
     <Router>
       <div>
@@ -48,6 +50,10 @@ function App() {
                 <AppListItem title='Custom Hook' desc='V16 custom hook func' />
                 </Link>
 
+                <Link to='/redux' className="app-list-link">
+                <AppListItem title='Redux' desc='Todo list app using redux with typescript' />
+                </Link>
+
               </ul>
             </div>
           </Route>
@@ -62,6 +68,9 @@ function App() {
           </Route>
           <Route path='/custom-hook'>
             <CustomHookPage />
+          </Route>
+          <Route path='/redux'>
+            <TodoPage />
           </Route>
         </Switch>
 

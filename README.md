@@ -5,8 +5,11 @@ It is a good place to look around and find the useful tools that you need.
 
 ## Content List
 
+### Redux
+A react state management tool based on the logic of Redux but also extended to Hooks.
+
 ### XState
-A react state management tool based on the logic of Redux but also extended to Hooks.\
+A react state management tool based on the logic of Redux but also extended to Hooks.
 
 ### Custom Hook
 Building your own Hooks lets you extract component logic into reusable functions.

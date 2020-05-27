@@ -35,6 +35,7 @@ const [ isOpen, setIsOpen ] = useState(false)
           <NavItem location='/xstate' title='XState' onClickItem={() => setIsOpen(false)} />
           <NavItem location='/spread' title='Spread' onClickItem={() => setIsOpen(false)} />
           <NavItem location='/custom-hook' title='Custom Hook' onClickItem={() => setIsOpen(false)} />
+          <NavItem location='/redux' title='Redux' onClickItem={() => setIsOpen(false)} />
         </ul>
       </div>
     </nav>
