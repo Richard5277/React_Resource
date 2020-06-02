@@ -14,6 +14,7 @@ import XStatePage from './pages/XState'
 import SpreadOperator from './pages/spreadOperator/SpreadOperator'
 import CustomHookPage from './pages/customHook';
 import TodoPage from './pages/redux'
+import Es6FeaturePage from './pages/es6Feature/es6Feature';
 
 const AppListItem = (props: any) => {
   const { title, desc } = props
@@ -54,6 +55,10 @@ function App() {
                 <AppListItem title='Redux' desc='Todo list app using redux with typescript' />
                 </Link>
 
+                <Link to='/es6-feature' className="app-list-link">
+                <AppListItem title='Es6 Feature' desc='New features from Es6 like Map and Set' />
+                </Link>
+
               </ul>
             </div>
           </Route>
@@ -71,6 +76,9 @@ function App() {
           </Route>
           <Route path='/redux'>
             <TodoPage />
+          </Route>
+          <Route path='/es6-feature'>
+            <Es6FeaturePage />
           </Route>
         </Switch>
 

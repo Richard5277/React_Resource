@@ -1,0 +1,20 @@
+// @import "../../shared/colors.scss";
+
+/*  
+    use modified node sass loading path with absolute path
+    add baseUrl in tsconfig.json file 
+
+*/
+
+@import "~shared/colors.scss";
+
+.app-todo {
+  width: 80%;
+  margin: auto;
+  padding: 24px 0;
+  text-align: center;
+  background-color: var(--rr-color-primary);
+}
+.add_todo_button {
+  margin-left: 8px;
+}

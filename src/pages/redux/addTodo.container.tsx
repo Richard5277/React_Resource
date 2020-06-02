@@ -1,7 +1,9 @@
 import React from 'react';
 import { Action, Dispatch } from 'redux';
 import { connect } from 'react-redux'
-import { addTodo } from '../../actions/todo/todo.action';
+import { addTodo } from './actions/todo/todo.action';
+
+import './todo.scss';
 
 interface AddTodoProps {
   dispatch : Dispatch<Action<any>>
@@ -20,7 +22,7 @@ const AddTodoContainer = (props: AddTodoProps) => {
         input.value = '';
       }}>
         <input ref={node => { if (node) (input = node)} } />
-        <button type="submit">Add Todo</button>
+        <button className="add_todo_button" type="submit">Add Todo</button>
       </form>
     </div>
   )

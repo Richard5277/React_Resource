@@ -1,5 +1,5 @@
 import { TodoActionType, ADD_TODO, TOGGLE_TODO } from "../actions/todo/todo.actiontype"
-import { ITodo } from "../shared/models/todo.model";
+import { ITodo } from "../../../shared/models/todo.model";
 
 const todosReducer = (state: Array<ITodo> = [], action: TodoActionType) => {
   switch ( action.type ) {  
